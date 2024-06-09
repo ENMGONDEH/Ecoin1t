@@ -1,0 +1,84 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-weight: bold;
+}
+
+#container {
+    text-align: center;
+}
+
+#coin-container {
+    margin: 20px 0;
+}
+
+#coinButton {
+    width: 100px;
+    height: 100px;
+    background: url('https://imageshack.com/i/pnyDNFeFj') no-repeat center center;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+#coins {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+}
+
+#rate {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+}
+
+#upgradeMenuButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#upgradeMenu {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+    padding: 20px;
+}
+
+.upgrade-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.upgradeButton {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+@keyframes increaseCoins {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+#coins.animate {
+    animation: increaseCoins 0.5s;
+}
